@@ -1,4 +1,5 @@
 <?php
+
 use App\Models\Post;
 use SleepingOwl\Admin\Model\ModelConfiguration;
 
@@ -14,7 +15,7 @@ AdminSection::registerModel(Post::class, function (ModelConfiguration $model) {
             AdminColumn::link('published_at')->setLabel('Data'),
 
         ]);
-        $display->paginate(15);
+        $display->paginate(10);
         return $display;
     });
 
