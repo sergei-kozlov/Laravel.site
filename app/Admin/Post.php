@@ -21,10 +21,10 @@ AdminSection::registerModel(Post::class, function (ModelConfiguration $model) {
     // Create And Edit
     $model->onCreateAndEdit(function() {
         return $form = AdminForm::panel()->addBody(
-            AdminFormElement::text('title', 'Title')->required()->unique(),
-            AdminFormElement::textarea('address', 'Address')->setRows(2),
-            AdminFormElement::text('phone', 'Phone'),
-            AdminFormElement::hidden('contact_id')
+            AdminFormElement::text('name', 'Name')->required()->unique(),
+            AdminFormElement::text('email', 'Email'),
+            AdminFormElement::textarea('subject', 'Post')->setRows(10),
+            AdminFormElement::hidden('published_at')
         );
         return $form;
     });
