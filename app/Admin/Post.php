@@ -23,8 +23,8 @@ AdminSection::registerModel(Post::class, function (ModelConfiguration $model) {
         return $form = AdminForm::panel()->addBody(
             AdminFormElement::text('name', 'Name')->required()->unique(),
             AdminFormElement::text('email', 'Email'),
-            AdminFormElement::textarea('subject', 'Post')->setRows(10),
-            AdminFormElement::hidden('published_at')
+            AdminFormElement::textarea('subject', 'Post')->setRows(8),
+            AdminFormElement::date('published_at')->required()->setFormat('"Y-m-d H:i:s"')
         );
         return $form;
     });

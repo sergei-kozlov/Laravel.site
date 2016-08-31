@@ -3,7 +3,7 @@
 @section('content')
     @foreach($posts as $post)
 
-        <div class="panel-info">
+        <div class="panel panel-default">
 
             <div class="panel-heading">{!! $post->name!!}</div>
             <div class="panel-body"><b>{!! $post->subject !!} </b></div>
@@ -11,19 +11,19 @@
 
         </div>
 
-        {{Form::open([
-                    'method' => 'delete',
-                    'route' => ['blog.destroy', $post->id ]])}}
-        <div class="panel-body">
-            <div class="pull-right">
-                <a href="{{route('blog.destroy', $post->id) }}">
-                    <button class="btn btn-danger">
-                        <i class="glyphicon glyphicon-trash"></i>
-                    </button>
-                </a>
-            </div>
-        </div>
-        {{Form::close()}}
+        {{--{{Form::open([--}}
+                    {{--'method' => 'delete',--}}
+                    {{--'route' => ['blog.destroy', $post->id ]])}}--}}
+        {{--<div class="panel-body">--}}
+            {{--<div class="pull-right">--}}
+                {{--<a href="{{route('blog.destroy', $post->id) }}">--}}
+                    {{--<button class="btn btn-danger">--}}
+                        {{--<i class="glyphicon glyphicon-trash"></i>--}}
+                    {{--</button>--}}
+                {{--</a>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--{{Form::close()}}--}}
 
 
     @endforeach

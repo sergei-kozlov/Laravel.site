@@ -16,7 +16,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-8 about_left">
+        <div class="col-md-10 about_right">
             @yield('content')
         </div>
         <div class="col-md-4">
