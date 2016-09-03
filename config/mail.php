@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'smtp'),
+    'driver' => env('MAIL_DRIVER', 'mail'),
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'smtp.list.ru'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT', 25),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,7 +55,15 @@ return [
     |
     */
 
-    'from' => ['address' => null, 'name' => null],
+
+    /*
+     * По умолчанию 'from' не работает, необходимо изменить как указанно ниже!!!
+     * Выполнить php artisan config:cache и провести рестарт сервера
+     */
+
+//    'from' => ['sergey_kozlov@list.ru' => null, 'Sergey' => null],
+
+    'from' => ['address' => 'sergey_kozlov@list.ru', 'name' => 'Sergey.com'],
 
     /*
     |--------------------------------------------------------------------------

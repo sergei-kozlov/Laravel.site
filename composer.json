@@ -8,7 +8,9 @@
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
         "laravelcollective/html": "5.2.x-dev",
-        "laravelrus/sleepingowl": "4.60.0"
+        "laravelrus/sleepingowl": "4.60.0",
+        "laravel/socialite": "v2.0.18",
+        "barryvdh/laravel-ide-helper": "v2.2.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

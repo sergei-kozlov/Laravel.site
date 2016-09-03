@@ -15,6 +15,8 @@
 //    return view('welcome');
 //});
 
+use Illuminate\Support\Facades\Route;
+
 Route::auth();
 
 //Route::get('/home', 'HomeController@index');
@@ -23,6 +25,7 @@ Route::auth();
 //    return View::make('auth.register');
 //
 //});
+
 
 Route::get('/', 'HomeController@showWelcome');
 

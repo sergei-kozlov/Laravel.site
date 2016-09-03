@@ -175,6 +175,8 @@ return [
 
         Collective\Html\HtmlServiceProvider::class,
 
+        Laravel\Socialite\SocialiteServiceProvider::class,
+
     ],
 
     /*
@@ -236,6 +238,9 @@ return [
         'AdminForm'     => 'SleepingOwl\Admin\Form\AdminForm',
         'AdminTemplate' => 'SleepingOwl\Admin\Templates\Facade\AdminTemplate',
         'FormItem'      => 'SleepingOwl\Admin\FormItems\FormItem',
+
+
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
 
 
