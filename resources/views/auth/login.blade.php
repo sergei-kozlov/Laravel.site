@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -60,17 +59,12 @@
 
 
                                     <div class="line">
-
-                                            <ul class="list-inline">
-                                                <li><a href="{!! route('socialite.auth', 'google') !!}">Google</a></li>
-                                                <li><a href="{!! route('socialite.auth', 'facebook') !!}">Facebook</a>
-                                                </li>
-                                                <li><a href="{!! route('socialite.auth', 'twitter') !!}">Twitter</a>
-                                                </li>
-                                            </ul>
-
+                                        <ul class="list-inline">
+                                            <li><a href="{!! route('socialite.auth', 'google') !!}">Google</a></li>
+                                            <li><a href="{!! route('socialite.auth', 'facebook') !!}">Facebook</a></li>
+                                            <li><a href="{!! route('socialite.auth', 'twitter') !!}">Twitter</a></li>
+                                        </ul>
                                     </div>
-
 
                                     <a class="btn btn-link" href="{{ url('/password/reset') }}">Forgot Your
                                         Password?</a>
