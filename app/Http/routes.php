@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::auth();
 
-//Route::get('/home', 'HomeController@index');
+Route::get('/home', 'HomeController@index');
 
 //Route::get('/auth', function () {
 //    return View::make('auth.register');
