@@ -56,4 +56,5 @@ return [
         'redirect' => 'http://socialite.dev/socialite/twitter/callback', //Ссылка на перенаправление при удачной авторизации (3)
     ],
 
+
 ];

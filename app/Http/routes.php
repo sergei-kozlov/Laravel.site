@@ -47,6 +47,7 @@ Route::resource('blog', 'BlogController');
 
 
 //Авторизация новых пользователей через социальные сети
+
 Route::get(
     '/socialite/{provider}',
     [
