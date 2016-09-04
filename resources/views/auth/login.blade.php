@@ -54,6 +54,12 @@
                                     <i class="fa fa-btn fa-sign-in"></i> Login
                                 </button>
 
+                                <p>Login with</p>
+
+                                <p><a href="{!! route('socialite.auth', 'google') !!}">Google</a></p>
+                                <p><a href="{!! route('socialite.auth', 'facebook') !!}">Facebook</a></p>
+                                <p><a href="{!! route('socialite.auth', 'twitter') !!}">Twitter</a></p>
+
                                 <a class="btn btn-link" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
                             </div>
                         </div>

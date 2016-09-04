@@ -44,3 +44,20 @@ Route::post('store', ['as' => 'store', 'uses' => 'BlogController@store']);
 
 //Вызов контроллера для удаления данных из БД RESTful
 Route::resource('blog', 'BlogController');
+
+
+//Авторизация новых пользователей через социальные сети
+Route::get(
+    '/socialite/{provider}',
+    [
+        'as' => 'socialite.auth',
+        function ( $provider ) {
+            return \Socialite::driver( $provider )->redirect();
+        }
+    ]
+);
+
+Route::get('/socialite/{provider}/callback', function ($provider) {
+    $user = \Socialite::driver($provider)->user();
+    dd($user);
+});
