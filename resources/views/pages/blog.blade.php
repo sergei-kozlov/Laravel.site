@@ -12,16 +12,16 @@
         </div>
 
         {{--{{Form::open([--}}
-                    {{--'method' => 'delete',--}}
-                    {{--'route' => ['blog.destroy', $post->id ]])}}--}}
+        {{--'method' => 'delete',--}}
+        {{--'route' => ['blog.destroy', $post->id ]])}}--}}
         {{--<div class="panel-body">--}}
-            {{--<div class="pull-right">--}}
-                {{--<a href="{{route('blog.destroy', $post->id) }}">--}}
-                    {{--<button class="btn btn-danger">--}}
-                        {{--<i class="glyphicon glyphicon-trash"></i>--}}
-                    {{--</button>--}}
-                {{--</a>--}}
-            {{--</div>--}}
+        {{--<div class="pull-right">--}}
+        {{--<a href="{{route('blog.destroy', $post->id) }}">--}}
+        {{--<button class="btn btn-danger">--}}
+        {{--<i class="glyphicon glyphicon-trash"></i>--}}
+        {{--</button>--}}
+        {{--</a>--}}
+        {{--</div>--}}
         {{--</div>--}}
         {{--{{Form::close()}}--}}
 
@@ -57,9 +57,6 @@
         'required']) !!}
 
 
-
-
-
     </div>
 
     <div class="form-group">
@@ -72,13 +69,10 @@
         'required']) !!}
     </div>
 
-    <div class="form-group">
+    <div class="form-group" id="click">
         {!! Form::submit('Добавить' , ['class' => 'btn btn-primary']) !!}
     </div>
 
     {!! Form::close()!!}
-
-
-
 
 @stop

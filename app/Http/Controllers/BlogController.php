@@ -45,7 +45,8 @@ class BlogController extends Controller
 
 
         $this->validate($request, [
-            'name' => 'min:10|max:255'
+            'name' => 'min:4|max:50',
+            'email' => 'email'
         ]);
 
 
