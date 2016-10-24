@@ -16,6 +16,7 @@ class SimpleTest extends \TestCase
     {
         $this->call('GET', '/');
 
+
         $this->assertResponseOk();
 
     }
@@ -37,7 +38,7 @@ class SimpleTest extends \TestCase
 
     public function testLinksTable()
     {
-        $this->seeInDatabase('posts', ['name' => 'Иван Иваниович']);
+        $this->seeInDatabase('posts', ['name' => 'Иван Иванович']);
         $this->seeInDatabase('posts', ['email' => 'ivan@ivan.com']);
         $this->seeInDatabase('posts', ['name' => 'Петр Петров']);
         $this->seeInDatabase('posts', ['email' => 'petr@petrov.com']);
